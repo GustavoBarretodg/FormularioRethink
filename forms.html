@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+           background-image: linear-gradient(to right, rgb(23, 125, 55), rgb(89, 102, 108))
+        
+        }
+        .box{
+            color: aliceblue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 30px;
+            width: 25%;
+        }
+        fieldset{
+            border: 3px solid darkolivegreen;
+        }
+        legend{
+            border: 1px solid rgb(64, 87, 24);
+            padding: 10px;
+            text-align: center;
+            background-color: green;
+            border-radius: 5px;
+         }
+         .imputBox{
+            position: relative;
+         }
+         .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+         }
+         .labelInput{
+            position: absolute;
+            pointer-events: none;
+            transition: .5s;
+         }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Formulario</b> </legend>
+                <br>
+                <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome Completo</label>
+                </div>
+               <br><br>
+            <div class="inputBox">
+                <input type="text" name="Profissao" id="Profissao" class="inputUser" required>
+                <label for="Profissao"class= "labelInput">Profissao</label>
+        </div>
+        <br><br>
+            <div class="inputBox">
+                <input type="email" name="email" id="email" class="inputUser" required>
+                <label for="email"class= "labelInput" >Email</label>
+        </div>
+        <br><br>
+            <div class="inputBox">
+                <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                <label for="telefone"class= "labelInput"> Telefone</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+            <label for="data"><b>Data de Preenchimento</b></label>
+            <input type="date" name="Data" id="Data" class="Data" required>
+            
+         </div>
+         <br><br>
+    <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
